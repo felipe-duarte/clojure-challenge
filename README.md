@@ -44,7 +44,7 @@ The system runs Jetty-Adapter on default port 8080 and Compojure libraries are u
 *   GET /api/rank
 *   POST /api/invite/:inviter/:invitee
 
-Application context root URL "/" also is redirected to "/api/rank".
+Application context root URL "/" also redirects to "/api/rank".
 
 ## Endpoints
 
