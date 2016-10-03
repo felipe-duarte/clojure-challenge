@@ -1,6 +1,6 @@
 # clojure-challenge
 
-Reward System Clojure Code Challenge.
+Reward System Clojure Code Challenge. An introduction to the problem is given [here](doc/intro.md "intro") .
 
 The system was built with Clojure, using [lein](http://leiningen.org/ "Lein") build tool, [ring](http://ring-clojure.github.io/ring/index.html "Ring") and [compojure](http://weavejester.github.io/compojure/ "Compojure")  libraries for network related parts.
 
