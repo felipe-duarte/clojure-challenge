@@ -4,11 +4,16 @@ Reward System Clojure Code Challenge.
 
 The system was built with Clojure, using [lein](http://leiningen.org/ "Lein") build tool, [ring](http://ring-clojure.github.io/ring/index.html "Ring") and [compojure](http://weavejester.github.io/compojure/ "Compojure")  libraries for network related parts.
 
-The solution creates a tree data structure using an atom. Single nodes are defined as key => {:cid :score :level :inviter :confirmed}. When a new valid invitation is added to the tree, system verifies if it confirms an invitation, and if so, recalculate score rank for each node in the subtree up to root.
+The solution creates a tree data structure using an atom. Single nodes are defined as 
+	
+	key => {:cid :score :level :inviter :confirmed}
+
+When a new valid invitation is added to the tree, system verifies if it confirms an invitation, and if so, recalculate score rank for each node in the subtree up to root.
 
 ## Build
 
 Download source-code from github.
+URL : https://github.com/felipe-duarte/clojure-challenge
 
 Install lein.
 
@@ -51,12 +56,13 @@ URL
 
 Response 
 
-	{	:status 200, 
-	 	:body [ {"cid": 1,
-    		 "score": 2.5},
-    		{"cid": 3,
-    		 "score": 1},
-    		... } 
+	{	
+	:status 200,
+	:header {"Content-Type" "application/json"} 
+	:body [ {"cid": 1, "score": 2.5},
+    		  {"cid": 3, "score": 1},
+    		... 
+    } 
 
 ### POST
 
@@ -64,21 +70,14 @@ URL
 
 	/api/invite/:inviter/:invitee  
  
-
 Params
  
-	inviter, invitee
+	inviter , invitee -- must be valid positive integers
    
-
 Response   
 
-	{  :status 200,
-	   :headers {"Content-Type" "text/html ; charset=utf-8"},
-		:body "INVITATION SUCESSFUL"
+	{  
+	:status 200,
+	:headers {"Content-Type" "text/html ; charset=utf-8"},
+	:body sucess-msg
 	}
-
-
-## Options
-
-
-### Bugs

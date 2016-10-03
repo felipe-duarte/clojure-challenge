@@ -1,6 +1,6 @@
 (defproject clojure-challenge "0.1.0-SNAPSHOT"
   :description "Clojure Challenge - Reward System"
-  :url "http://github.com/felipe-duarte"
+  :url "https://github.com/felipe-duarte/clojure-challenge"
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/math.numeric-tower "0.0.4"]
                  [ring/ring-json "0.4.0"]
