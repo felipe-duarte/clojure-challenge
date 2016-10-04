@@ -27,7 +27,7 @@ To run with default example file under resources:
 	lein run
 
 
-Tests for services where built using [ring-mock](https://github.com/ring-clojure/ring-mock "Ring-Mock") . To run tests:
+Tests for services were built using [ring-mock](https://github.com/ring-clojure/ring-mock "Ring-Mock") . To run tests:
 
 	lein test
 
